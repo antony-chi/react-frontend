@@ -5,4 +5,9 @@ import ReactDOM from "react-dom/client"
 //ReactDOM.createRoot(rootElement)//ReacDOM se la pasamos en la funcion createRoot
 
 const root = ReactDOM.createRoot(document.getElementById('root')); //listo el elemento raiz/root inicializada
-root.render(<h1>hola reac</h1>)
+
+function Greeting(){
+    return <h1>Este es un componente</h1>
+}
+
+root.render(Greeting())
