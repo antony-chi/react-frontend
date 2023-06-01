@@ -7,7 +7,18 @@ import ReactDOM from "react-dom/client"
 const root = ReactDOM.createRoot(document.getElementById('root')); //listo el elemento raiz/root inicializada
 
 function Greeting(){
-    return <h1>Este es un componente</h1>
+    return <div>
+        <h1>Este es un componente</h1>
+        <p>lorem 123</p>
+    </div>
 }
 
-root.render(Greeting())
+root.render(<div>
+
+    
+    <Greeting/>
+    <Greeting/>
+    <Greeting/>
+    <Greeting/>
+
+</div>)
