@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Greeting, UserCard } from "./Greeting";
+import { Greeting} from "./Greeting";
 import Product from "./Product"
 //---- iniciar elemento ROOT----
 //const rootElement = document.getElementById('root');//obtenemos el elemento root del html
@@ -10,8 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById("root")); //listo el el
 
 root.render(
   <>
-    <Greeting />
-    <UserCard/>
-    <Product/>
+    <Greeting title="hol mundo" name="Jhon" />
+    <Greeting title="hola Reac" name="Ryan" />
+    <Greeting title="hola JSX" />
+    <Greeting title="hola Javascript"/>
+    <Greeting title="hola Anthony" />
   </>
 );
