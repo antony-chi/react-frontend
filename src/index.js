@@ -21,7 +21,9 @@ root.render(
     <Saludar/>
     <Button text="saludar"/>
 
-    <input id="soyidInput" onChange={handdlerChange}/>
+    <input id="soyidInput" onDoubleClick={()=>{
+      console.log("doble Click")
+    }}/>
 
   </>
 );
