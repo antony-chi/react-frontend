@@ -21,9 +21,13 @@ root.render(
     <Saludar/>
     <Button text="saludar"/>
 
-    <input id="soyidInput" onDoubleClick={()=>{
-      console.log("doble Click")
-    }}/>
+    <form onSubmit={(event)=>{
+      event.preventDefault()
+      alert("enviado")
+      }}>
+      <h1>Registro de Usuario</h1>
+      <button>Send</button>
+    </form>
 
   </>
 );
