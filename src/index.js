@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Greeting} from "./Greeting";
-import Product from "./Product"
+import { Greeting, UserCard } from "./Greeting";
+import Product from "./Product";
 //---- iniciar elemento ROOT----
 //const rootElement = document.getElementById('root');//obtenemos el elemento root del html
 //ReactDOM.createRoot(rootElement)//ReacDOM se la pasamos en la funcion createRoot
@@ -10,10 +10,23 @@ const root = ReactDOM.createRoot(document.getElementById("root")); //listo el el
 
 root.render(
   <>
-    <Greeting title="hol mundo" name="Jhon" />
-    <Greeting title="hola Reac" name="Ryan" />
-    <Greeting title="hola JSX" />
-    <Greeting title="hola Javascript"/>
-    <Greeting title="hola Anthony" />
+    <UserCard
+      name="Ryan Ray"
+      amount={3000}
+      married={true}
+      points={[99, 33, 3, 22.2]}
+      address={{ street: 1234, city: "New York" }}
+      greet={function (){alert("hello")}}
+    />
+
+    <UserCard
+    name="anthony c"
+    amount={1000}
+    married={false}
+    points= {[100,20]}
+    address={{
+      street: "av some 124",
+      city: "new york"
+    }} />
   </>
 );
