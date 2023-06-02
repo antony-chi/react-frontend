@@ -11,15 +11,17 @@ import {Saludar} from './Saludar'
 
 const root = ReactDOM.createRoot(document.getElementById("root")); //listo el elemento raiz/root inicializada
 
+const handdlerChange = (event) => {
+  console.log(event.target.value)
+}
+
 root.render(
   <>
     <TaskCard ready= {true}/>
     <Saludar/>
     <Button text="saludar"/>
 
-    <input id="soyidInput" onChange={(event) => {
-      console.log(event.target.value+"...")
-    }}/>
+    <input id="soyidInput" onChange={handdlerChange}/>
 
   </>
 );
