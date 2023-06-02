@@ -12,6 +12,6 @@ const root = ReactDOM.createRoot(document.getElementById("root")); //listo el el
 
 root.render(
   <>
-    <TaskCard/>
+    <TaskCard ready= {true}/>
   </>
 );

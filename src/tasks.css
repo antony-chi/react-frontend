@@ -1,0 +1,14 @@
+.card {
+    background-color: #202020;
+    color: aliceblue;
+    padding: 10px;
+}
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
+/* const cartStyle = { background: "#202020", color: "#fff", padding: "20px" };
+const titleStyle = { fontWeight: "lighter" } */
