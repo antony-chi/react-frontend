@@ -7,13 +7,22 @@ import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root")); //listo el elemento raiz/root inicializada
 
 function Greeting() {
-    const married = false;
+  /* const married = false;
 
-  return <h1>{married ? "estoy casado 🤐" : "no estoy casado 😔"}</h1>//operador ternario
+  return <h1>{married ? "estoy casado 🤐" : "no estoy casado 😔"}</h1>; //operador ternario
+  */
+  function add(x, y) {
+    return x + y;
+  }
+
+  return <h1>{add(10, 30)}</h1>;
 }
 
 root.render(
-  <div>
+  <>
     <Greeting />
-  </div>
+    <Greeting />
+    <Greeting />
+    <Greeting />
+  </>
 );
