@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Greeting, UserCard } from "./Greeting";
 import Product from "./Product";
+import { Button } from "./Button";
 //---- iniciar elemento ROOT----
 //const rootElement = document.getElementById('root');//obtenemos el elemento root del html
 //ReactDOM.createRoot(rootElement)//ReacDOM se la pasamos en la funcion createRoot
@@ -10,6 +11,10 @@ const root = ReactDOM.createRoot(document.getElementById("root")); //listo el el
 
 root.render(
   <>
+  <Button text='Click me' />
+  <Button text='Pay'/>
+  <Button text='' name='Joe' />
+  {/* 
     <UserCard
       name="Ryan Ray"
       amount={3000}
@@ -27,6 +32,6 @@ root.render(
     address={{
       street: "av some 124",
       city: "new york"
-    }} />
+    }} /> */}
   </>
 );
