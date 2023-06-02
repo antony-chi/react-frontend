@@ -17,7 +17,7 @@ root.render(
     <Saludar/>
     <Button text="saludar"/>
 
-    <input id="soyidInput" onChange={function(event){
+    <input id="soyidInput" onChange={(event) => {
       console.log(event.target.value+"...")
     }}/>
 
