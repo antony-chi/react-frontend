@@ -1,24 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom/client"
+import ReactDOM from "react-dom/client";
 //---- iniciar elemento ROOT----
 //const rootElement = document.getElementById('root');//obtenemos el elemento root del html
 //ReactDOM.createRoot(rootElement)//ReacDOM se la pasamos en la funcion createRoot
 
-const root = ReactDOM.createRoot(document.getElementById('root')); //listo el elemento raiz/root inicializada
+const root = ReactDOM.createRoot(document.getElementById("root")); //listo el elemento raiz/root inicializada
 
-function Greeting(){
-    return <div>
-        <h1>Este es un componente</h1>
-        <p>lorem 123</p>
-    </div>
+function Greeting() {
+    const married = false;
+
+  return <h1>{married ? "estoy casado 🤐" : "no estoy casado 😔"}</h1>//operador ternario
 }
 
-root.render(<div>
-
-    
-    <Greeting/>
-    <Greeting/>
-    <Greeting/>
-    <Greeting/>
-
-</div>)
+root.render(
+  <div>
+    <Greeting />
+  </div>
+);
