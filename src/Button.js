@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 
-export function Button({ text, name = 'User' }) {
-  console.log(text)
+export function Button({ text, name = 'Some User' }) {
 /*   if(!text){
     console.error('el text es requerido')
   } */
-  return <button>
+  return <button onClick={function (){
+    console.log("hola mundo")
+  }}>
     {text}- {name}
   </button>;
 }
