@@ -1,10 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Greeting, UserCard } from "./Greeting";
-import Product from "./Product";
-import { Button } from "./Button";
-import { TaskCard } from "./Task";
-import { Saludar } from "./Saludar";
 import { Posts } from "./Post";
 //---- iniciar elemento ROOT----
 //const rootElement = document.getElementById('root');//obtenemos el elemento root del html
