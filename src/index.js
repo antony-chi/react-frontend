@@ -4,6 +4,7 @@ import { Greeting, UserCard } from "./Greeting";
 import Product from "./Product";
 import { Button } from "./Button";
 import { TaskCard } from "./Task";
+import {Saludar} from './Saludar'
 //---- iniciar elemento ROOT----
 //const rootElement = document.getElementById('root');//obtenemos el elemento root del html
 //ReactDOM.createRoot(rootElement)//ReacDOM se la pasamos en la funcion createRoot
@@ -13,5 +14,6 @@ const root = ReactDOM.createRoot(document.getElementById("root")); //listo el el
 root.render(
   <>
     <TaskCard ready= {true}/>
+    <Saludar/>
   </>
 );
